@@ -48,7 +48,7 @@ const PaginatedScreen = ({
         <UserCard paginatedUser={getPaginatedData()} />
       </div>
       {users.length > 0 && (
-        <div className="pagination flex sm:flex-col justify-center sm:justify-around mt-10 sm:border-2 sm:border-red-500">
+        <div className="pagination flex justify-center mt-10">
           {/* previous button */}
           <section className=" px-8 sm:px-2">
             <span className="font-semibold px-2 uppercase">pages: </span>
@@ -70,11 +70,11 @@ const PaginatedScreen = ({
             <button
               key={index}
               onClick={changePage}
-              className={`paginationItem sm:flex ${
+              className={`paginationItem ${
                 currentPage === item
                   ? "text-lg font-semibold hover:text-xl hover:text-zinc-900"
                   : "font-medium hover:text-xl hover:text-zinc-900"
-              } mx-3.5 sm:mx-0.5`}
+              } mx-3.5 sm:mx-1.5`}
             >
               <span>{item}</span>
             </button>
