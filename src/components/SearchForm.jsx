@@ -1,12 +1,11 @@
 import React, { useEffect, useContext, useState } from "react";
-import Button from "./button";
+import Button from "./Button";
 
 import axios from "axios";
 import { GithubUserContext } from "../context/githubUserContext";
 
 const SearchForm = () => {
   const context = useContext(GithubUserContext);
-  const [user, setUser] = useState([]);
   const [loading, isloading] = useState(false);
   const [username, setUserName] = useState("");
   const fetchUsers = () => loadMoreItems();
@@ -18,7 +17,7 @@ const SearchForm = () => {
   const loadMoreItems = () => {
     context.setUserName(username);
     context.setIsLoading(true);
-    if (username.length == 0) {
+    if (username.length === 0) {
       alert(" Kindly Input a Github Username to search !!!");
       context.setIsLoading(false);
       return;

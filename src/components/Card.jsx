@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ user }) => {
   return (
-    <div className="group w-80 h-60 border-slate-600 border-solid border-2 drop-shadow-2xl rounded-2xl cursor-pointer flex justify-center ">
+    <div className="group w-80 h-60 border-slate-600 border-solid border-2 drop-shadow-2xl rounded-2xl  flex justify-center ">
       <section class="flex flex-col py-8 content-center">
         <img
           class="w-24 h-24 rounded-full mx-auto"

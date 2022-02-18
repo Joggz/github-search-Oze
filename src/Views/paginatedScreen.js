@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { GithubUserContext } from "../context/githubUserContext";
-import UserCard from "../components/userCard";
-import DropDown from "../components/dropDown";
+import UserCard from "../components/UserCard";
+import DropDown from "../components/DropDown";
 
 const PaginatedScreen = ({
   data,
