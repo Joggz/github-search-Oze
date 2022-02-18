@@ -130,7 +130,7 @@ const Home = () => {
 
     axios({
       method: "GET",
-      url: `https://api.github.com/search/users?q=${username}&page=${pageNo}&per_page=${5}`,
+      url: `https://api.github.com/search/users?q=${username}&page=${pageNo}&per_page=${50}`,
     })
       .then((res) => {
         if (pageNo === 1) {
